@@ -1,0 +1,132 @@
+/* slots.css */
+
+/* General styling for body */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(90deg, #ff8c00, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #ff8c00;
+    border: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ffd700;
+    transform: scale(1.1);
+}
+
+#slots {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.slot {
+    background-color: #333333;
+    border: 2px solid #ffd700;
+    color: #ffd700;
+    font-size: 2em;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.bet-controls {
+    margin-top: 20px;
+}
+
+.bet-controls h3 {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p,
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .slot {
+        font-size: 1.5em;
+        width: 50px;
+        height: 50px;
+    }
+
+    .bet-controls h3 {
+        font-size: 1em;
+    }
+}

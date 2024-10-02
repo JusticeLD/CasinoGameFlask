@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Casino</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    <h1>Welcome to my Casino!</h1>
+    <h2>Your Balance:</h2>
+    <h2 id="balance"></h2>
+    <ul>
+        <li><a href='slots'>Slots</a></li> 
+        <li><a href="blackjack">Blackjack</a></li>
+        <li><a href="roulette">\Roulette IN PROGRESS/</a></li>
+    </ul>
+    <p1>Click on a game to play!</p1>
+    <button id="resetBalance">Reset Balance</button>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+  </body>

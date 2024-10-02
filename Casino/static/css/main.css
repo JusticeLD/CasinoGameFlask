@@ -1,0 +1,86 @@
+/* styles.css */
+
+/* General styling for body */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling for header */
+h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(90deg, #ff8c00, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Styling for navigation links */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    color: #ff8c00;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+/* Adding some hover effects */
+li:hover {
+    transform: scale(1.1);
+}
+
+/* Additional styling for the body */
+body::before {
+    content: '';
+    background: url('casino-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    a {
+        font-size: 1.2em;
+        margin: 0 10px;
+    }
+}

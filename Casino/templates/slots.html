@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slots</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/slots.css') }}">
+</head>
+<body>
+  <h1>Slots</h1>
+  <h2>Your Balance:</h2>
+  <h2 id="balance">1000</h2>
+  <p>Click the button to play the slots!</p>
+  <button id="play">Play</button>
+  <p id="result"></p>
+  <div id="slots">
+    <div class="slot" id="slot1">0</div>
+    <div class="slot" id="slot2">0</div>
+    <div class="slot" id="slot3">0</div>
+  </div>
+  <div class="bet-controls">
+    <p>Bet Amount:</p>
+    <h3 id="betAmount">5</h3>
+    <button id="increaseBet">+</button>
+    <button id="decreaseBet">-</button>
+  </div>
+  <script src="{{ url_for('static', filename='js/slots.js') }}"></script>
+  <nav>
+    <ul>
+      <li><a href="slots">Slots</a></li>
+      <li><a href="blackjack">Blackjack</a></li>
+      <li><a href="roulette">Roulette</a></li>
+      <li><a href="/">Home</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

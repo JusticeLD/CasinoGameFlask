@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/blackjack.css') }}">
+</head>
+<body> 
+    <h1>BlackJack</h1>
+    <h2>Your Balance:</h2>
+    <h2 id="balance">1000</h2>
+    <p>Click the button to play Blackjack!</p>
+    <button id="play">Play</button>
+    <p id="result"></p>
+    <div id="blackjack">
+        <div class="player">
+            <h3>Player</h3>
+            <div id="player-cards"></div>
+            <h3 id="player-score"></h3>
+        </div>
+        <div class="dealer">
+            <h3>Dealer</h3>
+            <div id="dealer-cards"></div>
+            <h3 id="dealer-score"></h3>
+        </div>
+    </div>
+    <div class="bet-controls">
+        <p>Bet Amount:</p>
+        <h3 id="betAmount">5</h3>
+        <button id="increaseBet">+</button>
+        <button id="decreaseBet">-</button>
+    </div>
+    <div class="game-controls">
+        <button id="hit">Hit</button>
+        <button id="stand">Stand</button>
+    <nav>
+        <ul>
+            <li><a href="slots">Slots</a></li>
+            <li><a href="blackjack">Blackjack</a></li>
+            <li><a href="roulette">Roulette</a></li>
+            <li><a href="/">Home</a></li>
+        </ul>
+    </nav>
+    <script src="{{ url_for('static', filename='js/blackjack.js') }}"></script>
+</body>
+</html>
